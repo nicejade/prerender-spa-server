@@ -24,7 +24,7 @@ module.exports = {
 		const prerender = req.prerender
 		if (!prerender.cacheHit && prerender.statusCode == 200) {
 			await client.set(prerender.url, prerender.content, {
-				EX: 60 * 60 * 24 * 3,
+				EX: redisConf.expire,
 			})
 		}
 		next()

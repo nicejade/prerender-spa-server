@@ -14,7 +14,7 @@ module.exports = {
 			env_production: {
 				NODE_ENV: 'production',
 			},
-			restart_delay: 3000,
+			restart_delay: 6000,
 		},
 	],
 }
