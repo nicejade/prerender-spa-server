@@ -1,0 +1,22 @@
+{
+  "name": "prerender-spa-server",
+  "version": "0.1.0",
+  "description": "Prerender SPA server.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "nodemon src/index.js",
+    "deploy": "pm2 start ecosystem.config.js --env production",
+    "redeploy": "git pull && pm2 restart ecosystem.config.js --env production"
+  },
+  "author": "nicejade",
+  "dependencies": {
+    "prerender": "^5.20.0",
+    "redis": "^4.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicejade/nicelinks.site"
+  },
+  "license": "MIT"
+}
