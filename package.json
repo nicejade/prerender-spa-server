@@ -1,7 +1,8 @@
 {
   "name": "prerender-spa-server",
-  "version": "0.1.0",
-  "description": "Prerender SPA server.",
+  "version": "0.1.1",
+  "description": "For serving your prerendered HTML to crawlers for SEO, through Prerender & Redis & Nginx.",
+  "author": "nicejade",
   "main": "src/index.js",
   "scripts": {
     "start": "npm run dev",
@@ -9,14 +10,13 @@
     "deploy": "pm2 start ecosystem.config.js --env production",
     "redeploy": "git pull && pm2 restart ecosystem.config.js --env production"
   },
-  "author": "nicejade",
   "dependencies": {
     "prerender": "^5.20.0",
     "redis": "^4.3.1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nicejade/nicelinks.site"
+    "url": "git+https://github.com/nicejade/prerender-spa-server"
   },
   "license": "MIT"
 }
