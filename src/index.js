@@ -1,5 +1,5 @@
 const prerender = require('prerender')
-const RedisCache = require('./cache')
+// const RedisCache = require('./cache')
 
 const server = prerender({
 	chromeFlags: [
@@ -16,6 +16,7 @@ server.use(prerender.browserForceRestart())
 // server.use(prerender.blockResources())
 server.use(prerender.removeScriptTags())
 server.use(prerender.httpHeaders())
-server.use(RedisCache)
+// server.use(RedisCache)
+server.use(require('prerender-memory-cache'))
 
 server.start()
