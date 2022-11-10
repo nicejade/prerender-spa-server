@@ -13,10 +13,10 @@ const server = prerender({
 
 server.use(prerender.sendPrerenderHeader())
 server.use(prerender.browserForceRestart())
-// server.use(prerender.blockResources())
+server.use(prerender.blockResources())
 server.use(prerender.removeScriptTags())
 server.use(prerender.httpHeaders())
-// server.use(RedisCache)
-server.use(require('prerender-memory-cache'))
+server.use(RedisCache)
+// server.use(require('prerender-memory-cache'))
 
 server.start()
