@@ -1,5 +1,5 @@
 const prerender = require('prerender')
-// const RedisCache = require('./cache')
+const RedisCache = require('./cache')
 
 const server = prerender({
 	chromeFlags: [

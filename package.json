@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "prerender": "^5.20.0",
-    "prerender-memory-cache": "^1.0.2",
     "redis": "^4.3.1"
   },
   "repository": {
