@@ -70,6 +70,8 @@ code ./
 
 > Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker. Redis provides data structures …
 
+"Redis Client Error Error: connect ECONNREFUSED 127.0.0.1:6379"， If you encounter this problem on the server, see the article [redis-server --daemonize yes](https://memo.lovejade.cn/m/333).
+
 ### [Nginx](https://nicelinks.site/post/6339a6aa35a9c117dacf2363)
 
 > nginx [engine x] is an HTTP and reverse proxy server, a mail proxy server, and a generic TCP/UDP proxy server, originally written by Igor Sysoev. For a long time, it has been running on many heavily loaded Russian sites including Yandex, Mail.Ru, VK, and Rambler. According to Netcraft, nginx served or proxied 21.62% busiest sites in August 2022.
